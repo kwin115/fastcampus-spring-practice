@@ -1,8 +1,12 @@
-package com.fastcampus.fastcampusjavaoop.logic;
+package com.fastcampus.springpractice.logic;
+
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
+@Component("bublesort")
 public class Bublesort <T extends  Comparable<T>> implements Sort<T>{
     @Override
     public List<T> sort(List<T> list){
